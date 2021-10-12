@@ -34,4 +34,4 @@ test:
 
 .PHONY: package.release
 package.release:
-	twine upload dist/*
+	./venv/bin/twine upload dist/*

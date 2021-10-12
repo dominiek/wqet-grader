@@ -1,6 +1,6 @@
 
 import os
-from src.transport import encode_value, decode_value, encode_submission, decode_submission
+from wqet_grader.transport import encode_value, decode_value, encode_submission, decode_submission
 import pandas as pd
 from category_encoders import OneHotEncoder
 from sklearn.linear_model import LinearRegression
