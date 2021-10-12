@@ -1,9 +1,9 @@
-# WQET Grading Client
+# WQET Grader Client
 
 ## Installation
 
 ```
-pip install wqet-grading
+pip install wqet-grader
 ```
 
 ## Usage
@@ -12,10 +12,10 @@ Simple grading:
 
 ```python
 
-import wqet_grading
+import wqet_grader
 
 submission = "My Answer"
-wqet_grading.grade('Sample Assessment', 'Question 1', submission)
+wqet_grader.grade('Sample Assessment', 'Question 1', submission)
 
 ```
 
@@ -23,11 +23,11 @@ Object grading:
 
 ```python
 
-import wqet_grading
+import wqet_grader
 
 arg1 = 3.14
 arg2 = "something else"
-wqet_grading.grade_object('Sample Assessment', 'Question 1', arg1=arg1, arg2=arg2)
+wqet_grader.grade_object('Sample Assessment', 'Question 1', arg1=arg1, arg2=arg2)
 
 ```
 
