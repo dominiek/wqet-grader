@@ -8,6 +8,8 @@ pip install wqet-grading
 
 ## Usage
 
+Simple grading:
+
 ```python
 
 import wqet_grading
@@ -17,7 +19,28 @@ wqet_grading.grade('Sample Assessment', 'Question 1', submission)
 
 ```
 
+Object grading:
+
+```python
+
+import wqet_grading
+
+arg1 = 3.14
+arg2 = "something else"
+wqet_grading.grade_object('Sample Assessment', 'Question 1', arg1=arg1, arg2=arg2)
+
+```
+
+Supported objects:
+
+- `file` Binary file
+- `pandas_dataframe` Pandas DataFrame object
+- `sklearn_model` SKLearn pipeline/model
+- `float`, `int`, `string`, `dict`, `list` - Primative types
+
 ## Configuration
+
+Through environment variables:
 
 - `GRADING_API_URL` - URL of grading API
 - `VM_TOKEN` - Temporary token for user authentication
