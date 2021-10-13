@@ -27,6 +27,7 @@ venv:
 	./venv/bin/python -m pip install pip-tools
 	./venv/bin/python -m pip install -r requirements.txt
 	./venv/bin/python -m pip install -r dev-requirements.txt
+	./venv/bin/python -m pip install twine
 
 .PHONY: test
 test:

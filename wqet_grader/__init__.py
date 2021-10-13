@@ -4,7 +4,7 @@ from .transport import grade_submission
 def grade(assessment_id, question_id, submission):
   submission_object = {
     'type': 'simple',
-    'argument': submission
+    'argument': [submission]
   }
   return grade_submission(assessment_id, question_id, submission_object)
 

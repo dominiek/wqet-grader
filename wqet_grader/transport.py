@@ -35,7 +35,7 @@ def encode_value(value, value_type = None):
       'format': 'pickle',
       'data': base64.b64encode(file.read()).decode()
     }
-  if value_type in ['sklearn_model', 'Pipeline']:
+  if value_type in ['sklearn_model', 'Pipeline', 'OneHotEncoder', 'LinearRegression']:
     file = tempfile.NamedTemporaryFile()
     joblib.dump(value, file.name)
     return {
@@ -47,7 +47,7 @@ def encode_value(value, value_type = None):
     return {
       'type': 'file',
       'format': 'binary',
-      'data': base64.b64encode(value.read())
+      'data': base64.b64encode(value.read()).decode()
     }
   raise Exception('Unsupported type for encoding: {}'.format(value_type))
 
