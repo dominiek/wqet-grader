@@ -8,6 +8,10 @@ import os
 import tempfile
 import base64
 import pandas as pd
+from category_encoders import OneHotEncoder
+from sklearn.linear_model import LinearRegression
+from sklearn.pipeline import make_pipeline
+from sklearn.metrics import mean_absolute_error
 import joblib
 import requests
 from urllib import error
@@ -39,7 +43,7 @@ def encode_value(value, value_type = None):
       'format': 'pickle',
       'data': base64.b64encode(file.read()).decode()
     }
-  if value_type in ['file', 'BufferedReader']:
+  if value_type in ['file', 'BufferedReader', 'bytes']:
     return {
       'type': 'file',
       'format': 'binary',

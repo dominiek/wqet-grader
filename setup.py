@@ -16,14 +16,16 @@ class install(_install):
 
 setup(
     name="wqet_grader",
-    version="0.1.2",
+    version="0.1.3",
     description='Grading for WQET',
     url='https://github.com/dominiek/wqet-grader',
     cmdclass={'install': install},
     include_package_data=True,
     install_requires=[
         'pandas>=1.3.3',
-        'requests>=2.26.0'
+        'requests>=2.26.0',
+        'category-encoders>=2.2.2',
+        'scikit-learn>=1.0',
     ],
     packages=find_packages()
 )
