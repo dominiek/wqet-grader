@@ -17,13 +17,6 @@ if has_ipython == False:
 def init_html():
   html = '''
 <style>
-  body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   
   .checkmark {
     width: 56px;
