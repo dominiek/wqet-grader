@@ -44,6 +44,7 @@ Through environment variables:
 
 - `GRADING_API_URL` - URL of grading API
 - `VM_TOKEN` - Temporary token for user authentication
+- `SCORE_OUTPUT_FORMAT` - Format of score output in notebook: `json` or `html` (defaults to JSON)
 
 ## Development Setup
 
