@@ -157,7 +157,7 @@ def render_score_html(result):
       </div>
     </div>
 '''
-  display(HTML(html.replace('$score', result['score'])))
+  display(HTML(html.replace('$score', str(result['score']))))
 
 def show_score(result):
   if SCORE_OUTPUT_FORMAT == 'json':
