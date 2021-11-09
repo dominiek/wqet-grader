@@ -19,58 +19,64 @@ from urllib import error
 GRADING_API_URL = os.getenv('GRADING_API_URL', 'http://localhost:2400')
 VM_TOKEN = os.getenv('VM_TOKEN', '')
 
-def encode_value(value, value_type = None):
-  if not value_type:
-    value_type = type(value).__name__
-  if value_type in ['list', 'dict', 'int', 'float', 'str']:
-    return {
-      'type': value_type,
-      'data': json.dumps(value)
-    }
-  if value_type in ['pandas_dataframe', 'DataFrame']:
-    file = tempfile.NamedTemporaryFile()
-    value.to_pickle(file.name, compression=None)
-    return {
-      'type': 'pandas_dataframe',
-      'format': 'pickle',
-      'data': base64.b64encode(file.read()).decode()
-    }
-  if value_type in ['sklearn_model', 'Pipeline', 'OneHotEncoder', 'LinearRegression']:
-    file = tempfile.NamedTemporaryFile()
-    joblib.dump(value, file.name)
-    return {
-      'type': 'sklearn_model',
-      'format': 'pickle',
-      'data': base64.b64encode(file.read()).decode()
-    }
-  if value_type in ['file', 'BufferedReader', 'bytes']:
-    return {
-      'type': 'file',
-      'format': 'binary',
-      'data': base64.b64encode(value.read()).decode()
-    }
-  raise Exception('Unsupported type for encoding: {}'.format(value_type))
+def encode_value(value, value_type=None):
+    if not value_type:
+        value_type = type(value).__name__
+    if value_type in ["list", "dict", "int", "float", "str"]:
+        return {"type": value_type, "data": json.dumps(value)}
+    if value_type in ["pandas_dataframe", "DataFrame"]:
+        file = tempfile.NamedTemporaryFile()
+        value.to_pickle(file.name, compression=None)
+        return {
+            "type": "pandas_dataframe",
+            "format": "pickle",
+            "data": base64.b64encode(file.read()).decode(),
+        }
+    if value_type in ["pandas_series", "Series"]:
+        file = tempfile.NamedTemporaryFile()
+        value.to_pickle(file.name, compression=None)
+        return {
+            "type": "pandas_series",
+            "format": "pickle",
+            "data": base64.b64encode(file.read()).decode(),
+        }
+    if value_type in ["sklearn_model", "Pipeline"]:
+        file = tempfile.NamedTemporaryFile()
+        joblib.dump(value, file.name)
+        return {
+            "type": "sklearn_model",
+            "format": "pickle",
+            "data": base64.b64encode(file.read()).decode(),
+        }
+    if value_type in ["file", "BufferedReader"]:
+        return {"type": "file", "format": "binary", "data": base64.b64encode(value.read())}
+    raise Exception("Unsupported type for encoding: {}".format(value_type))
 
 def decode_value(value):
-  value_type = value['type']
-  if value_type in ['list', 'dict', 'int', 'float', 'str']:
-    return json.loads(value['data'])
-  if value_type == 'pandas_dataframe':
-    file = tempfile.NamedTemporaryFile()
-    file.write(base64.b64decode(value['data']))
-    file.seek(0)
-    return pd.read_pickle(file.name, compression=None)
-  if value_type == 'sklearn_model':
-    file = tempfile.NamedTemporaryFile()
-    file.write(base64.b64decode(value['data']))
-    file.seek(0)
-    return joblib.load(file.name)
-  if value_type == 'file':
-    file = tempfile.NamedTemporaryFile(delete=False)
-    file.write(base64.b64decode(value['data']))
-    file.seek(0)
-    return file
-  raise Exception('Unsupported type for encoding: {}'.format(value_type))
+    value_type = value["type"]
+    if value_type in ["list", "dict", "int", "float", "str"]:
+        return json.loads(value["data"])
+    if value_type == "pandas_dataframe":
+        file = tempfile.NamedTemporaryFile()
+        file.write(base64.b64decode(value["data"]))
+        file.seek(0)
+        return pd.read_pickle(file.name, compression=None)
+    if value_type == "pandas_series":
+        file = tempfile.NamedTemporaryFile()
+        file.write(base64.b64decode(value["data"]))
+        file.seek(0)
+        return pd.read_pickle(file.name, compression=None)
+    if value_type == "sklearn_model":
+        file = tempfile.NamedTemporaryFile()
+        file.write(base64.b64decode(value["data"]))
+        file.seek(0)
+        return joblib.load(file.name)
+    if value_type == "file":
+        file = tempfile.NamedTemporaryFile(delete=False)
+        file.write(base64.b64decode(value["data"]))
+        file.seek(0)
+        return file
+    raise Exception("Unsupported type for encoding: {}".format(value_type))
 
 def encode_submission(object):
   encoded_submission = {

@@ -16,7 +16,7 @@ class install(_install):
 
 setup(
     name="wqet_grader",
-    version="0.1.9",
+    version="0.1.10",
     description='Grading for WQET',
     url='https://github.com/dominiek/wqet-grader',
     cmdclass={'install': install},

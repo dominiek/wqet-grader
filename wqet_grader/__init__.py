@@ -129,6 +129,7 @@ def init_html():
   display(HTML(html))
 
 def render_score_html(result):
+  comment = result.get('comment', 'Please Try Again :(')
   html = '''
   <div class="wqet-result">
     <div class="animation">
@@ -137,12 +138,13 @@ def render_score_html(result):
       </svg>
     </div>
     <div class="details">
-      <h4>Please Try Again :(</h4>
+      <h4>$comment</h4>
       <p>Score: $score</p>
     </div>
   </div>
 '''
   if result.get('passed', False) == True:
+    comment = result.get('comment', 'Question Passed!')
     html = '''
     <div class="wqet-result">
       <div class="animation">
@@ -152,12 +154,12 @@ def render_score_html(result):
         </svg>
       </div>
       <div class="details">
-        <h4>Question Passed!</h4>
+        <h4>$comment</h4>
         <p>Score: $score</p>
       </div>
     </div>
 '''
-  display(HTML(html.replace('$score', str(result['score']))))
+  display(HTML(html.replace('$score', str(result['score'])).replace('$comment', comment)))
 
 def show_score(result):
   if SCORE_OUTPUT_FORMAT == 'json':
