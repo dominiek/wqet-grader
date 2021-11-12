@@ -49,7 +49,7 @@ def encode_value(value, value_type=None):
             "data": base64.b64encode(file.read()).decode(),
         }
     if value_type in ["file", "BufferedReader"]:
-        return {"type": "file", "format": "binary", "data": base64.b64encode(value.read())}
+        return {"type": "file", "format": "binary", "data": base64.b64encode(value.read()).decode()}
     raise Exception("Unsupported type for encoding: {}".format(value_type))
 
 def decode_value(value):
