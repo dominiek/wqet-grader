@@ -1,13 +1,14 @@
 
 import os
 import sys
-from .transport import grade_submission, remote_request
+from .transport import decode_value, grade_submission, remote_request
 import importlib
 
 has_ipython = False
 if importlib.util.find_spec("IPython") is not None:
   has_ipython = True
   from IPython.core.display import display, HTML
+  from PIL import Image as PilImage
 
 SCORE_OUTPUT_FORMAT = os.getenv('SCORE_OUTPUT_FORMAT', 'json')
 
@@ -98,7 +99,7 @@ def init_html():
   
   
   .wqet-result {
-    width: 250px;
+    width: 450px;
     clear: both;
   }
   
@@ -114,7 +115,7 @@ def init_html():
   
   .wqet-result .details {
     float: right;
-    width: 149px;
+    width: 349px;
     padding: 28px 0;
   }
   
@@ -160,6 +161,10 @@ def render_score_html(result):
     </div>
 '''
   display(HTML(html.replace('$score', str(result['score'])).replace('$comment', comment)))
+  if result.get('image', None) != None:
+    image = decode_value(result['image'])
+    pil_image = PilImage.open(image)
+    display(pil_image)
 
 def show_score(result):
   if SCORE_OUTPUT_FORMAT == 'json':
