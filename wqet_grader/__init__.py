@@ -156,7 +156,7 @@ def render_score_html(result):
         </svg>
       </div>
       <div class="details">
-        <h4>$comment</h4>
+        <p class="title">$comment</p>
         <p>Score: $score</p>
       </div>
     </div>
