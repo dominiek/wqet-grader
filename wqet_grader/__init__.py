@@ -119,8 +119,9 @@ def init_html():
     padding: 28px 0;
   }
   
-  .wqet-result .details h4 {
-    margin: 0;
+  .wqet-result .details .title {
+    font-weight: bold;
+    font-size: 110%;
   }
   .wqet-result .details p {
     margin: 0;
@@ -139,7 +140,7 @@ def render_score_html(result):
       </svg>
     </div>
     <div class="details">
-      <h4>$comment</h4>
+      <p class="title">$comment</p>
       <p>Score: $score</p>
     </div>
   </div>
