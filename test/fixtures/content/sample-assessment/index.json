@@ -1,0 +1,54 @@
+{
+  "id": "Sample Assessment",
+  "graders": [
+    {
+      "id": "Question 1",
+      "gradingType": "code",
+      "function": "compare_lists",
+      "defaults": {
+        "expectedResult": [
+          "Quer\u00e9taro",
+          "Guanajuato",
+          "Nuevo Le\u00f3n",
+          "Quintana Roo",
+          "Jalisco",
+          "Distrito Federal",
+          "Chihuahua",
+          "Guerrero",
+          "Estado de M\u00e9xico",
+          "Puebla"
+        ]
+      },
+      "arguments": "list"
+    },
+    {
+      "id": "Question 2",
+      "gradingType": "code",
+      "function": "grade_wrangle",
+      "arguments": {
+        "dataframe": "pandas_dataframe",
+        "multiplier": "float"
+      }
+    },
+    {
+      "id": "Question 3a",
+      "gradingType": "code",
+      "function": "grade_mae",
+      "defaults": {
+        "thresh": 35000,
+        "filepath_X_test": "mexico-real-estate-test.csv",
+        "filepath_y_test": "mexico-real-estate-test-labels.csv"
+      },
+      "arguments": "sklearn_model"
+    },
+    {
+      "id": "Question 4",
+      "gradingType": "code",
+      "function": "compare_plot",
+      "arguments": "file",
+      "defaults": {
+        "expectedImagePath": "plot.png"
+      }
+    }
+  ]
+}

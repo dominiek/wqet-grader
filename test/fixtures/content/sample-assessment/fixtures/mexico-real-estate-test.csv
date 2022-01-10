@@ -1,0 +1,435 @@
+property_type,state,lat,lon,area_m2
+house,Baja California,32.601212,-115.474838,102.0
+apartment,Distrito Federal,19.345528,-99.189906,60.0
+house,Yucatán,20.9973786,-89.6296213,170.0
+house,Puebla,19.0412967,-98.2061996,250.0
+house,Chiapas,19.701769,-101.145103,120.0
+house,Estado de México,19.297163,-99.635183,230.0
+apartment,Estado de México,19.427053,-99.256293,100.0
+house,Tamaulipas,25.860595,-97.504808,212.0
+house,Morelos,18.892714,-99.1996,285.0
+house,Morelos,18.890867,-99.177444,171.0
+house,Estado de México,19.494789,-99.270887,151.0
+house,San Luis Potosí,22.148722,-101.00119,190.0
+house,Estado de México,19.5139313,-99.2281847,160.0
+house,Puebla,18.984862,-98.222234,289.0
+house,Morelos,18.743973,-99.254183,79.0
+house,Morelos,18.900852,-99.213448,200.0
+house,Baja California,30.733356,-115.984407,200.0
+house,Morelos,18.847519,-99.220529,162.0
+apartment,Guerrero,16.851935,-99.844955,195.0
+house,Yucatán,21.072905,-89.65963,190.0
+house,Hidalgo,20.1254846,-98.7362998,229.0
+house,Tamaulipas,22.307415,-97.859846,61.0
+house,Chiapas,16.742777,-93.119011,140.0
+apartment,Distrito Federal,19.449392,-99.138544,70.0
+apartment,Distrito Federal,19.400004,-99.16735,94.0
+house,Quintana Roo,21.101317,-86.862888,182.0
+house,Jalisco,20.650429,-103.374611,190.0
+apartment,Distrito Federal,19.41275,-99.126007,60.0
+house,Morelos,18.913485,-99.240456,80.0
+apartment,Distrito Federal,19.48888,-99.179278,70.0
+house,Yucatán,21.01429,-89.605148,280.0
+house,Distrito Federal,19.367215,-99.222138,180.0
+house,Baja California,32.665619,-115.433372,134.0
+apartment,San Luis Potosí,22.125832,-101.035118,144.0
+house,Puebla,18.978682,-98.250015,128.0
+apartment,Distrito Federal,19.41498,-99.177444,164.0
+apartment,Puebla,19.026517,-98.214364,102.0
+house,Quintana Roo,21.139086,-86.84964,66.0
+house,Estado de México,19.305643,-98.901535,120.0
+house,Yucatán,21.0441317,-89.6216334,223.0
+apartment,Distrito Federal,19.378009,-99.193543,180.0
+apartment,Distrito Federal,19.3261962968,-99.140586108,74.0
+house,Distrito Federal,19.353288,-99.244721,90.0
+apartment,Puebla,19.0733273,-98.2658243,164.0
+apartment,San Luis Potosí,22.1418,-101.027344,114.0
+house,Quintana Roo,21.164147,-86.868479,330.0
+house,Estado de México,19.1617587,-99.6178249,85.0
+house,Veracruz de Ignacio de la Llave,19.563767,-96.938694,300.0
+house,Morelos,18.804197,-98.932816,130.0
+house,Morelos,18.795519,-99.231445,165.0
+house,Chiapas,19.750508,-101.181947,90.0
+apartment,Distrito Federal,19.380937,-99.179545,98.0
+apartment,Distrito Federal,19.451872,-99.173522,70.0
+house,Chihuahua,28.6329957,-106.0691004,290.0
+house,Estado de México,19.253367,-99.606303,260.0
+apartment,Distrito Federal,19.380937,-99.179545,98.0
+house,Querétaro,20.549404,-100.378563,110.0
+apartment,Puebla,18.987232,-98.206947,93.0
+house,Guerrero,16.8583631,-99.8508616,354.0
+apartment,Distrito Federal,19.454332,-99.200287,90.0
+house,Estado de México,19.482168,-99.264038,140.0
+house,Querétaro,20.403807,-99.990905,110.0
+house,Yucatán,21.0064261,-89.6850751,90.0
+apartment,Distrito Federal,19.405298,-99.164986,80.0
+house,Morelos,18.850763,-98.943855,168.0
+house,Aguascalientes,21.88585,-102.294085,185.0
+apartment,Puebla,19.0206582554,-98.2238459587,100.0
+house,Querétaro,20.6536084,-100.3469826,130.0
+house,San Luis Potosí,22.1897892283,-100.9525537491,138.0
+house,Baja California,32.4690603,-116.8196303,111.0
+house,Nuevo León,25.626854,-100.188538,170.0
+house,Querétaro,20.618279,-100.346985,237.0
+house,Chiapas,16.756552,-93.181732,326.0
+apartment,Yucatán,21.030668,-89.599258,80.0
+apartment,Distrito Federal,19.351371,-99.161529,60.0
+apartment,Distrito Federal,19.368553,-99.178235,174.0
+house,Hidalgo,20.036614,-98.77615,295.0
+house,Yucatán,20.992149142,-89.5655331016,121.0
+apartment,Distrito Federal,19.314545,-99.140672,122.0
+house,Yucatán,21.0012449,-89.5674103,133.0
+apartment,Distrito Federal,19.524143,-99.160149,60.0
+apartment,Oaxaca,17.0588513685,-96.749432981,94.0
+apartment,Distrito Federal,19.396018,-99.147827,70.0
+apartment,Quintana Roo,21.139086,-86.84964,203.0
+house,Veracruz de Ignacio de la Llave,20.9638852,-97.4124504,88.0
+house,Durango,24.043295,-104.636917,350.0
+apartment,Guerrero,16.864830635,-99.8752605915,61.0
+apartment,Distrito Federal,19.463009,-99.131106,81.0
+house,Hidalgo,20.0519991,-98.755252,110.0
+apartment,Distrito Federal,19.3928136,-99.1738213,112.0
+house,Veracruz de Ignacio de la Llave,20.957177,-97.410652,350.0
+house,Chihuahua,28.6569304,-106.0919272,115.0
+house,Nuevo León,25.530777,-100.2071,299.0
+house,Distrito Federal,19.3870644,-99.0362059,300.0
+house,Morelos,18.919898,-98.978835,190.0
+house,Querétaro,20.607178,-100.335754,104.0
+house,Nuevo León,25.652299,-100.266174,281.0
+apartment,Distrito Federal,19.3010279716,-99.1442191601,108.0
+apartment,Yucatán,21.015982,-89.705116,172.0
+apartment,Distrito Federal,19.375412,-99.144234,60.0
+house,Distrito Federal,19.2826778,-99.2090757,161.0
+house,Yucatán,21.017197,-89.574516,158.0
+house,Tabasco,23.634501,-102.552788,82.0
+house,Yucatán,21.006756,-89.570984,155.0
+house,Estado de México,19.537234,-99.025536,83.0
+house,Estado de México,19.5224961,-99.255074,230.0
+house,Puebla,19.014643,-98.170731,286.0
+house,Estado de México,19.64079,-99.098691,105.0
+house,Tamaulipas,22.270658,-97.849037,380.0
+apartment,Distrito Federal,19.305233,-99.12269,75.0
+house,Querétaro,20.726007,-100.442642,250.0
+house,Puebla,19.105051,-98.243682,170.0
+apartment,Estado de México,19.521015,-99.23091,130.0
+house,Nuevo León,25.758963,-100.316811,175.0
+house,Quintana Roo,21.118165,-86.880921,189.0
+house,San Luis Potosí,22.193162,-101.005431,80.0
+house,Estado de México,23.634501,-102.552788,228.0
+house,Estado de México,19.4953683665,-99.2584598064,140.0
+house,Baja California,32.421957,-117.033513,170.0
+apartment,Distrito Federal,19.3819271,-99.1891539,90.0
+house,San Luis Potosí,22.1840801528,-101.0286072441,110.0
+house,Chiapas,16.757278,-93.134056,255.0
+house,Distrito Federal,19.33427,-99.083374,100.0
+house,Distrito Federal,19.342911,-99.224472,120.0
+house,Tabasco,18.072582,-93.165413,350.0
+house,Morelos,18.942068,-99.242531,320.0
+house,Distrito Federal,19.399652,-99.16127,235.0
+house,Chiapas,19.670241,-101.190542,190.0
+house,Yucatán,20.9637793,-89.6612548,249.0
+house,Morelos,18.935198,-99.232834,300.0
+house,Estado de México,19.589786878,-99.0521619915,80.0
+house,Querétaro,20.6113606,-100.3288581,132.0
+apartment,Estado de México,19.379597,-99.293808,155.0
+house,Guerrero,16.758724,-99.767563,142.0
+house,Distrito Federal,19.317653,-99.236291,350.0
+house,Sonora,29.07683,-110.9871743,309.0
+house,Morelos,18.926468,-99.214211,340.0
+house,San Luis Potosí,22.193523,-101.0019,211.0
+house,Estado de México,19.627731,-99.30194,146.0
+house,Veracruz de Ignacio de la Llave,25.558637,-103.449786,250.0
+house,Querétaro,20.3951106,-99.9856344,180.0
+house,Querétaro,20.631845,-100.390495,315.0
+house,Estado de México,19.262129,-99.602481,239.0
+house,Quintana Roo,21.138567,-86.842937,185.0
+house,Morelos,18.892714,-99.1996,90.0
+house,Veracruz de Ignacio de la Llave,23.634501,-102.552788,148.0
+apartment,Distrito Federal,19.402944,-99.199727,70.0
+apartment,Distrito Federal,19.365834,-99.263505,126.0
+house,Distrito Federal,19.33981,-99.216052,272.0
+house,Yucatán,21.0424858,-89.5568382,185.0
+apartment,Distrito Federal,19.372248,-99.133377,65.0
+house,Chiapas,16.744808,-93.179222,350.0
+house,Estado de México,19.532259,-99.23214,220.0
+apartment,Distrito Federal,19.428767,-99.1459,75.0
+apartment,Distrito Federal,19.396018,-99.147827,80.0
+apartment,Veracruz de Ignacio de la Llave,19.1005941575,-96.1070613563,76.0
+house,San Luis Potosí,22.1388821177,-100.9965100633,158.0
+house,Morelos,18.855343,-99.241142,73.0
+house,Morelos,18.813505,-98.953514,140.0
+apartment,Morelos,18.937398,-99.246207,127.0
+house,Puebla,18.978682,-98.250015,162.0
+house,Hidalgo,20.124367,-98.735725,176.0
+house,Distrito Federal,19.473907,-99.177444,320.0
+apartment,Puebla,19.056689,-98.237817,120.0
+house,Morelos,23.634501,-102.552788,360.0
+house,Nuevo León,25.7815621,-100.1875974,108.0
+house,Querétaro,20.624242,-100.390194,172.0
+apartment,Estado de México,19.531834,-99.240456,117.0
+house,Quintana Roo,21.112447,-86.85264,180.0
+house,San Luis Potosí,22.1176282971,-101.015124321,380.0
+house,Veracruz de Ignacio de la Llave,20.950622658,-97.4216314405,64.0
+house,Campeche,18.660893,-91.7663706,264.0
+house,Chiapas,16.717077,-93.162903,170.0
+house,Puebla,19.01195,-98.219383,385.0
+house,Querétaro,20.6543981,-100.3546346,137.0
+house,Yucatán,21.039522,-89.563911,181.0
+house,Baja California,32.459403,-116.880827,114.0
+house,Estado de México,19.55134,-99.233528,260.0
+house,Nuevo León,25.801826,-100.196945,190.0
+house,Estado de México,19.558449,-99.22973,180.0
+house,Guerrero,16.862803,-99.894829,147.0
+house,Tabasco,18.0341023227,-92.9841993784,161.0
+house,Tamaulipas,22.2621259,-97.8238578,141.0
+house,Puebla,19.044477,-98.328011,350.0
+house,Sonora,23.634501,-102.552788,383.0
+house,Jalisco,20.649154,-105.202538,90.0
+apartment,Nuevo León,25.6689477,-100.3536491,117.0
+house,Querétaro,20.419854,-99.998039,89.0
+apartment,Distrito Federal,19.3880398,-99.1695793,100.0
+house,Baja California,32.494759,-117.016926,92.0
+house,San Luis Potosí,22.1470009295,-101.0172995925,160.0
+house,Nuevo León,25.721457,-100.228301,190.0
+house,Distrito Federal,19.403597,-99.149771,380.0
+apartment,Distrito Federal,19.451872,-99.173522,70.0
+apartment,Yucatán,21.072905,-89.65963,210.0
+house,Nuevo León,25.712547,-100.249496,210.0
+apartment,Querétaro,20.5365909,-100.4411011,80.0
+house,Estado de México,19.5562275,-99.2674713,150.0
+house,San Luis Potosí,22.169217188,-101.0471907892,190.0
+house,Estado de México,19.295469,-99.692619,84.0
+house,Querétaro,20.58966,-100.366899,335.0
+house,Puebla,19.036623,-98.190544,204.0
+house,Veracruz de Ignacio de la Llave,18.147928788,-94.4772926867,175.0
+house,Guerrero,16.860338,-99.870399,168.0
+house,Veracruz de Ignacio de la Llave,18.134026,-94.476112,210.0
+house,Yucatán,21.0278699,-89.5880314,240.0
+house,Veracruz de Ignacio de la Llave,19.532236,-96.94104,180.0
+house,Distrito Federal,19.493973,-99.130394,300.0
+house,Morelos,18.928623,-99.247382,220.0
+house,Estado de México,19.544106,-99.112656,131.0
+house,Chiapas,19.673779,-101.187927,210.0
+house,Yucatán,21.006756,-89.570984,162.0
+house,Morelos,18.804409,-98.959038,130.0
+apartment,Distrito Federal,19.395097,-99.150424,65.0
+house,Yucatán,21.072905,-89.65963,200.0
+house,Nuevo León,25.714615,-100.230576,309.0
+house,Morelos,18.922282,-99.04435,70.0
+house,Tamaulipas,22.2695545,-97.8750355,140.0
+apartment,Puebla,19.058884,-98.260885,104.0
+house,Baja California,32.426032,-117.033916,140.0
+house,Morelos,18.845494,-99.20547,136.0
+house,Veracruz de Ignacio de la Llave,19.144342,-96.139002,140.0
+house,Querétaro,20.6536084,-100.3469826,128.0
+house,Quintana Roo,21.1773896,-86.8179603,290.0
+house,Estado de México,19.560181,-99.233528,150.0
+house,Estado de México,19.562922,-99.254974,120.0
+house,Quintana Roo,21.139641,-86.879738,100.0
+house,Distrito Federal,19.318989,-99.094437,100.0
+house,Querétaro,20.594322,-100.365929,286.0
+apartment,Guerrero,16.7506391062,-99.762630685,70.0
+apartment,Estado de México,19.379597,-99.293808,155.0
+house,Querétaro,20.5887932,-100.3898881,84.0
+house,Quintana Roo,21.161908,-86.8515279,220.0
+house,Jalisco,20.700756,-103.333385,300.0
+house,Yucatán,21.072905,-89.65963,90.0
+apartment,Distrito Federal,19.473001,-99.087491,79.0
+house,San Luis Potosí,22.133745,-101.016029,132.0
+house,Distrito Federal,19.336104,-99.101761,70.0
+apartment,Estado de México,19.5652097,-99.2646998,87.0
+house,Yucatán,21.0525830247,-89.5386385918,205.0
+house,Yucatán,21.0231861,-89.5863038,253.0
+house,Veracruz de Ignacio de la Llave,19.173773,-96.1342241,160.0
+house,Tamaulipas,26.079573,-98.282845,268.0
+apartment,Morelos,18.923538,-99.241848,110.0
+house,Nayarit,20.70506,-105.269812,101.0
+apartment,Distrito Federal,19.493713,-99.204941,60.0
+house,Veracruz de Ignacio de la Llave,25.484016,-100.966568,290.0
+apartment,Estado de México,19.607218,-99.194926,100.0
+apartment,Distrito Federal,19.376822,-99.174675,114.0
+house,Yucatán,21.0751632,-89.5167298,252.0
+house,Puebla,19.076204,-98.266733,117.0
+apartment,Quintana Roo,21.1595877395,-86.8222086132,145.0
+house,Morelos,18.9147310938,-98.9408111572,140.0
+house,Yucatán,20.938659,-89.615316,173.0
+house,Yucatán,21.072905,-89.65963,240.0
+house,Tlaxcala,19.341597,-98.215828,180.0
+house,Estado de México,19.524088,-99.096736,75.0
+house,Yucatán,21.030668,-89.599258,175.0
+house,Aguascalientes,21.878481,-102.332787,215.0
+house,Distrito Federal,19.325944,-99.098311,250.0
+house,Nuevo León,25.708134,-100.145821,60.0
+apartment,Sinaloa,23.296583,-106.479973,134.0
+house,Chiapas,19.701565,-101.270798,250.0
+apartment,Distrito Federal,19.287568,-99.145853,100.0
+house,Jalisco,20.532264,-103.484418,175.0
+house,Puebla,19.1090862,-98.3289824,160.0
+apartment,Jalisco,20.685983,-103.447155,64.0
+apartment,Distrito Federal,19.465454,-99.162665,69.0
+house,Yucatán,21.0399331,-89.5965747,240.0
+house,Sonora,29.058504,-110.978981,185.0
+house,Morelos,18.936026,-99.216217,286.0
+apartment,Distrito Federal,19.33923,-99.218987,83.0
+house,Yucatán,21.0411724,-89.5550539,195.0
+house,Estado de México,19.72876,-99.461708,90.0
+house,Veracruz de Ignacio de la Llave,19.139896,-96.109911,163.0
+house,Distrito Federal,19.353592,-99.177275,360.0
+apartment,Nuevo León,25.7302897,-100.3965403,160.0
+house,Estado de México,19.514382,-99.258682,150.0
+house,Jalisco,20.302476,-103.23781,340.0
+house,Sinaloa,24.8053549677,-107.4623677164,95.0
+apartment,Quintana Roo,21.1500747207,-86.8316459656,165.0
+house,Morelos,18.897581,-99.07093,306.0
+house,Morelos,18.862602,-99.213448,210.0
+house,Distrito Federal,19.355938,-99.129918,200.0
+house,Baja California,32.425724,-117.034189,115.0
+house,Tabasco,18.053865,-92.937809,182.0
+house,Estado de México,19.309069,-99.602311,146.0
+house,Estado de México,19.522923,-99.241837,200.0
+house,Baja California,23.634501,-102.552788,115.0
+house,Quintana Roo,21.129547,-86.817017,275.0
+house,Veracruz de Ignacio de la Llave,19.0530826,-96.0588921,200.0
+house,Baja California,32.457415,-116.88252,102.0
+apartment,Distrito Federal,19.3418937,-99.2245237,145.0
+apartment,Distrito Federal,19.381591,-99.165397,124.0
+house,Morelos,18.864874,-98.925911,130.0
+house,Veracruz de Ignacio de la Llave,19.0652948,-96.069905,239.0
+house,Morelos,18.885848,-98.973834,82.0
+house,Puebla,19.0550344,-98.2731403,330.0
+house,Tabasco,17.979631,-92.965249,100.0
+house,Chihuahua,28.64073,-106.109581,300.0
+house,Morelos,18.840925,-98.934196,110.0
+apartment,Distrito Federal,19.403794,-99.155899,70.0
+house,Guerrero,16.855229,-99.918871,150.0
+house,Chiapas,19.673779,-101.187927,260.0
+house,Yucatán,21.072905,-89.65963,201.0
+house,Puebla,19.0303511,-98.3143192,122.0
+house,Puebla,19.0364236166,-98.1994184107,337.0
+house,Veracruz de Ignacio de la Llave,25.573046,-103.443045,200.0
+house,Morelos,18.9212022,-99.1739857,125.0
+house,Puebla,19.027103,-98.270025,166.0
+house,Morelos,18.948109,-99.26886,200.0
+house,Chihuahua,28.6556674,-106.0711926,159.0
+house,San Luis Potosí,22.1877427607,-100.9580844641,200.0
+house,Jalisco,20.784784,-103.471496,79.0
+apartment,Estado de México,19.508253,-99.254997,113.0
+house,Veracruz de Ignacio de la Llave,19.1553371,-96.1682507,282.0
+house,Nuevo León,25.580088,-100.239685,234.0
+house,Sinaloa,23.283125,-106.406723,192.0
+house,Aguascalientes,21.8893042472,-102.2563044727,198.0
+house,Nuevo León,25.6769684,-100.4508956,107.0
+house,Estado de México,19.663315,-99.103287,100.0
+house,Baja California,32.5622552,-115.3169575,75.0
+house,Baja California,32.469498,-116.96022,111.0
+house,Aguascalientes,21.901482,-102.34405,350.0
+house,Nayarit,20.697244,-105.274384,160.0
+house,Yucatán,21.075163,-89.516731,185.0
+house,Morelos,18.850763,-98.943855,160.0
+house,Estado de México,19.283869,-99.588992,70.0
+house,Distrito Federal,19.396669,-99.067626,220.0
+apartment,Yucatán,21.0306572,-89.5945502,144.0
+house,Distrito Federal,19.358008,-99.127094,95.0
+apartment,Puebla,18.9678552823,-98.2848708631,127.0
+house,Chiapas,16.768602,-93.164162,185.0
+house,Yucatán,21.0283803657,-89.564639926,174.0
+house,Estado de México,19.545727,-99.039146,133.0
+house,Jalisco,20.689157,-103.366728,175.0
+house,Nuevo León,25.7581963,-100.2665026,135.0
+house,Querétaro,20.598278,-100.33121,140.0
+house,Nuevo León,25.6866142,-100.3161126,90.0
+house,Nuevo León,25.696475,-100.345717,220.0
+house,Querétaro,20.574251,-100.388476,195.0
+house,Yucatán,21.039522,-89.563911,277.0
+house,Estado de México,19.650003,-99.220367,135.0
+house,Estado de México,19.64443,-99.098587,75.0
+house,Yucatán,21.030668,-89.599258,100.0
+house,Aguascalientes,21.9243493,-102.2833909,140.0
+house,Distrito Federal,19.3434226,-99.1359301,182.0
+house,Morelos,18.90666,-98.965851,330.0
+house,Veracruz de Ignacio de la Llave,18.1495073,-94.4422,200.0
+house,Veracruz de Ignacio de la Llave,25.441315,-100.987683,120.0
+house,Distrito Federal,19.473623,-99.124863,147.0
+house,Estado de México,19.300923,-99.713636,73.0
+house,Sinaloa,24.8427771,-107.3931108,117.0
+apartment,Distrito Federal,19.446256,-99.147767,68.0
+house,Veracruz de Ignacio de la Llave,25.439536,-100.994925,293.0
+house,Yucatán,21.039522,-89.563911,178.0
+house,Yucatán,21.072905,-89.65963,250.0
+house,Estado de México,19.550762,-99.242156,160.0
+apartment,Distrito Federal,19.452331,-99.177162,90.0
+house,Baja California Sur,19.35913,-98.983431,189.0
+apartment,Distrito Federal,19.393257,-99.157113,100.0
+apartment,Distrito Federal,19.444924,-99.139843,60.0
+house,Estado de México,19.229864,-99.597954,270.0
+house,Puebla,19.0412967,-98.2061996,109.0
+house,Chiapas,19.710472,-101.222626,190.0
+apartment,Distrito Federal,19.401507,-99.14682,90.0
+house,Morelos,23.634501,-102.552788,115.0
+house,Distrito Federal,19.380834,-99.200764,350.0
+house,Yucatán,21.030668,-89.599258,320.0
+house,Quintana Roo,21.129547,-86.817017,180.0
+house,Sonora,29.083198,-110.993222,162.0
+apartment,Jalisco,20.649012,-103.448288,88.0
+house,Estado de México,19.229864,-99.597954,256.0
+house,Querétaro,20.726007,-100.442642,135.0
+apartment,Guerrero,16.8531086,-99.8236533,141.0
+house,Morelos,18.813505,-98.953514,80.0
+house,Yucatán,20.9968241,-89.5846761,164.0
+house,Baja California Sur,24.155968,-110.315987,204.0
+apartment,Distrito Federal,19.51918,-99.143403,60.0
+house,Nuevo León,25.7394971,-100.2754971,164.0
+house,Yucatán,21.072905,-89.65963,290.0
+house,Guerrero,16.838398,-99.897744,113.0
+house,Yucatán,21.013465,-89.591041,239.0
+house,Estado de México,19.621174,-99.148073,100.0
+house,Nuevo León,25.660103,-100.410858,127.0
+house,Estado de México,19.5896123,-99.2907617,60.0
+house,Chiapas,16.740764,-93.089951,148.0
+apartment,Distrito Federal,19.354947,-99.087529,65.0
+house,Puebla,18.984862,-98.222234,289.0
+house,Estado de México,23.634501,-102.552788,150.0
+house,Estado de México,19.538595,-99.180214,200.0
+house,Yucatán,21.030668,-89.599258,144.0
+house,Baja California Sur,24.0390214553,-110.3097617626,250.0
+house,Veracruz de Ignacio de la Llave,23.634501,-102.552788,205.0
+house,Estado de México,19.470298,-99.272488,218.0
+house,Morelos,18.893921,-99.221429,160.0
+house,Nuevo León,25.5683841,-100.2439723,320.0
+house,Tamaulipas,26.058614,-98.322969,252.0
+house,Morelos,18.917542,-98.963181,220.0
+apartment,Oaxaca,15.752900306,-96.1357247829,83.0
+apartment,Distrito Federal,19.403334,-99.157755,125.0
+house,Querétaro,20.726007,-100.442642,200.0
+apartment,Yucatán,21.018724,-89.589836,60.0
+house,Nuevo León,25.707024,-100.21376,250.0
+house,Puebla,19.014643,-98.170731,140.0
+house,Querétaro,20.558271,-100.42942,139.0
+house,Jalisco,20.569456,-103.50165,176.0
+apartment,Guerrero,16.8595223103,-99.8628473282,142.0
+house,San Luis Potosí,22.186096,-101.005652,240.0
+house,Jalisco,20.647398,-105.209682,84.0
+apartment,Querétaro,20.60782,-100.366721,110.0
+house,Querétaro,20.555649,-100.38488,325.0
+house,Chihuahua,28.652079,-106.109581,227.0
+house,Estado de México,19.272027,-99.553293,107.0
+apartment,Morelos,18.891611,-99.221756,93.0
+house,Yucatán,20.968147,-89.629875,70.0
+apartment,Distrito Federal,19.322523,-99.141464,78.0
+house,Yucatán,21.0381057,-89.5933722,182.0
+house,Jalisco,20.785506,-103.442286,98.0
+house,Yucatán,21.0411724,-89.5550539,205.0
+house,Hidalgo,23.634501,-102.552784,140.0
+house,Estado de México,19.258327,-99.598374,215.0
+house,Morelos,18.93409,-99.254997,198.0
+house,Puebla,18.99466,-98.2761016,178.0
+apartment,Distrito Federal,19.383952,-99.160229,100.0
+house,Nayarit,20.733392,-105.288009,172.0
+house,Querétaro,20.520556,-99.895833,350.0
+house,Morelos,18.953518,-99.272508,300.0
+apartment,Distrito Federal,19.427607,-99.160835,102.0
+house,Puebla,19.0378006,-98.3007086,165.0
+house,Estado de México,19.31673,-99.581169,80.0
+house,Veracruz de Ignacio de la Llave,25.659972,-103.366303,170.0
+apartment,Distrito Federal,19.365383,-99.16507,81.0
+house,Yucatán,21.030668,-89.599258,305.0

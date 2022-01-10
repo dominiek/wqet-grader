@@ -2,14 +2,15 @@ PYTHON_ENV ?= development
 GUNICORN_NUM_WORKERS ?= 5
 BIND_HOST ?= 0.0.0.0
 BIND_PORT ?= 2400
+GRADING_CONTENT_PATH ?= test/fixtures/content
 
 .PHONY: gunicorn
 gunicorn:
-	PYTHON_ENV=$(PYTHON_ENV) PYTHONPATH=src/ ./venv/bin/gunicorn --access-logfile - --error-logfile - --workers=$(GUNICORN_NUM_WORKERS) --bind=$(BIND_HOST):$(BIND_PORT) src.server:app
+	PYTHON_ENV=$(PYTHON_ENV) PYTHONPATH=wqet_grader/ ./venv/bin/gunicorn --access-logfile - --error-logfile - --workers=$(GUNICORN_NUM_WORKERS) --bind=$(BIND_HOST):$(BIND_PORT) wqet_grader.server:app
 
 .PHONY: start
 start:
-	PYTHON_ENV=$(PYTHON_ENV) PYTHONPATH=src/ ./venv/bin/gunicorn --access-logfile - --error-logfile - --workers=$(GUNICORN_NUM_WORKERS) --bind=$(BIND_HOST):$(BIND_PORT) src.server:app
+	PYTHON_ENV=$(PYTHON_ENV) PYTHONPATH=wqet_grader/ ./venv/bin/gunicorn --access-logfile - --error-logfile - --workers=$(GUNICORN_NUM_WORKERS) --bind=$(BIND_HOST):$(BIND_PORT) wqet_grader.server:app
 
 .PHONY: clean
 clean:
@@ -31,7 +32,7 @@ venv:
 
 .PHONY: test
 test:
-	PYTHON_ENV=test PYTHONPATH=. ./venv/bin/pytest test
+	GRADING_CONTENT_PATH=$(GRADING_CONTENT_PATH) PYTHON_ENV=test PYTHONPATH=. ./venv/bin/pytest test
 
 .PHONY: package.release
 package.release:

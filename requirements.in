@@ -1,6 +1,8 @@
 
 # HTTP Tools
 requests
+flask
+flask-cors
 
 # Data Science
 pandas

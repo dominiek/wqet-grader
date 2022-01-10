@@ -1,0 +1,5 @@
+#!/bin/bash
+CONTENT_MODE=true \
+PYTHON_ENV=development \
+PYTHONPATH=. \
+  ./venv/bin/python3 scripts/load_and_run.py $*
