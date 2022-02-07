@@ -18,6 +18,7 @@ from urllib import error
 
 GRADING_API_URL = os.getenv('GRADING_API_URL', 'http://localhost:2400')
 VM_TOKEN = os.getenv('VM_TOKEN', '')
+FAIL_ON_FIRST = os.getenv("FAIL_ON_FIRST", None)
 
 def encode_value(value, value_type=None):
     if not value_type:
@@ -141,9 +142,11 @@ def grade_submission(assessment_id, question_id, submission_object):
     else:
       raise Exception('Could not grade submission: {}'.format(error['message']))
   result = envelope['data']['result']
-  passed_line = ''
-  if 'passed' in result:
-    passed_line += '(Passed: {})'.format(result['passed'])
-  #print('Your {} Score: {} {}'.format(question_id, result['score'], passed_line))
+  
+  # Used only in testing
+  if FAIL_ON_FIRST and not result["passed"]:
+    raise Exception(
+      f"Testing Error. Submission for assessment `{assessment_id} - {question_id}` failed."
+    )
   return result
 
