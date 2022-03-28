@@ -41,7 +41,7 @@ def encode_value(value, value_type=None):
             "format": "pickle",
             "data": base64.b64encode(file.read()).decode(),
         }
-    if value_type in ["sklearn_model", "Pipeline"]:
+    if value_type in ["sklearn_model", "Pipeline", "GridSearchCV"]:
         file = tempfile.NamedTemporaryFile()
         joblib.dump(value, file.name)
         return {
