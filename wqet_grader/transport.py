@@ -12,6 +12,8 @@ from category_encoders import OneHotEncoder
 from sklearn.linear_model import LinearRegression
 from sklearn.pipeline import make_pipeline
 from sklearn.metrics import mean_absolute_error
+from sklearn.base import BaseEstimator
+from sklearn.pipeline import Pipeline
 import joblib
 import requests
 from urllib import error
@@ -41,7 +43,7 @@ def encode_value(value, value_type=None):
             "format": "pickle",
             "data": base64.b64encode(file.read()).decode(),
         }
-    if value_type in ["sklearn_model", "Pipeline", "GridSearchCV"]:
+    if value_type == "sklearn_model" or isinstance(value_type, (BaseEstimator, Pipeline)):
         file = tempfile.NamedTemporaryFile()
         joblib.dump(value, file.name)
         return {
