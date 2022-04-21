@@ -43,7 +43,7 @@ def encode_value(value, value_type=None):
             "format": "pickle",
             "data": base64.b64encode(file.read()).decode(),
         }
-    if value_type == "sklearn_model" or isinstance(value_type, (BaseEstimator, Pipeline)):
+    if value_type == "sklearn_model" or isinstance(value, (BaseEstimator, Pipeline)):
         file = tempfile.NamedTemporaryFile()
         joblib.dump(value, file.name)
         return {
