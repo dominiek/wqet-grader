@@ -6,7 +6,8 @@ from category_encoders import OneHotEncoder
 from sklearn.linear_model import LinearRegression
 from sklearn.pipeline import make_pipeline
 from sklearn.metrics import mean_absolute_error
-from sklearn.model_selection import GridSearchCV, KFold
+from sklearn.model_selection import GridSearchCV
+from sklearn.cluster import KMeans
 
 my_dir = os.path.dirname(os.path.abspath(__file__))
 
@@ -70,7 +71,11 @@ def test_sklearn_encoding():
   decoded_value = decode_value(encoded_value)
   assert isinstance(decoded_value, GridSearchCV)
 
-  # Check 
+  # Check KMean encoding
+  model = KMeans(n_clusters=3)
+  encoded_value = encode_value(model)
+  decoded_value = decode_value(encoded_value)
+  assert isinstance(decoded_value, KMeans)
 
 
 def test_file_encoding():
