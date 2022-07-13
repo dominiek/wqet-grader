@@ -4,6 +4,7 @@
 #
 #    pip-compile
 #
+bson
 category-encoders==2.2.2
     # via -r requirements.in
 certifi==2021.5.30
