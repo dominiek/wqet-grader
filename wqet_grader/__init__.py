@@ -181,13 +181,18 @@ def grade(assessment_id, question_id, submission):
   }
   return show_score(grade_submission(assessment_id, question_id, submission_object))
 
-def clean_bson(documents: list) -> list:
+def clean_bson(documents: list, sort_by_id="True") -> list:
   for d in documents:
     for k, v in d.items():
       if isinstance(v, ObjectId):
         d[k] = str(v)
       if isinstance(v, datetime.datetime):
         d[k] = v.isoformat()
+  if sort_by_id:
+    try:
+      documents = sorted(documents, key=lambda x: x["_id"])
+    except KeyError:
+      raise KeyError("Your documents are missing an '_id' key.")
   return documents
 
 def grade_object(assessment_id, question_id, **kwargs):
