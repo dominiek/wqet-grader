@@ -17,6 +17,7 @@ from sklearn.pipeline import Pipeline
 import joblib
 import requests
 from urllib import error
+import bson
 
 GRADING_API_URL = os.getenv('GRADING_API_URL', 'http://localhost:2400')
 VM_TOKEN = os.getenv('VM_TOKEN', '')
