@@ -26,7 +26,7 @@ FAIL_ON_FIRST = os.getenv("FAIL_ON_FIRST", None)
 def encode_value(value, value_type=None):
     if not value_type:
         value_type = type(value).__name__
-    if value_type in ["list", "dict", "int", "float", "str"]:
+    if value_type in ["list", "dict", "int", "float", "float64", "str", "bool"]:
         return {"type": value_type, "data": json.dumps(value)}
     if value_type in ["pandas_dataframe", "DataFrame"]:
         file = tempfile.NamedTemporaryFile()
@@ -58,7 +58,7 @@ def encode_value(value, value_type=None):
 
 def decode_value(value):
     value_type = value["type"]
-    if value_type in ["list", "dict", "int", "float", "str"]:
+    if value_type in ["list", "dict", "int", "float", "float64", "str", "bool"]:
         return json.loads(value["data"])
     if value_type == "pandas_dataframe":
         file = tempfile.NamedTemporaryFile()

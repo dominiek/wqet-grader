@@ -8,6 +8,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import GridSearchCV
 from sklearn.cluster import KMeans
+import numpy as np
 
 my_dir = os.path.dirname(os.path.abspath(__file__))
 
@@ -25,6 +26,12 @@ def test_json_encoding():
   value = "testo"
   assert decode_value(encode_value(value)) == value
   value = {"one": "two"}
+  assert decode_value(encode_value(value)) == value
+  value = True
+  assert decode_value(encode_value(value)) == value
+  value = 1
+  assert decode_value(encode_value(value)) == value
+  value = np.float64(1.2)
   assert decode_value(encode_value(value)) == value
 
 def test_dataframe_encoding():
