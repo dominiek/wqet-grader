@@ -18,6 +18,7 @@ import joblib
 import requests
 from urllib import error
 import bson
+from matplotlib.axes._axes import Axes
 
 GRADING_API_URL = os.getenv('GRADING_API_URL', 'http://localhost:2400')
 VM_TOKEN = os.getenv('VM_TOKEN', '')
@@ -53,6 +54,14 @@ def encode_value(value, value_type=None):
             "format": "pickle",
             "data": base64.b64encode(file.read()).decode(),
         }
+    if value_type == "matplotlib_axis" or isinstance(value, (Axes)):
+        file = tempfile.NamedTemporaryFile()
+        joblib.dump(value, file.name)
+        return {
+            "type": "matplotlib_axis",
+            "format": "pickle",
+            "data": base64.b64encode(file.read()).decode(),
+        }
     if value_type in ["file", "BufferedReader"]:
         return {"type": "file", "format": "binary", "data": base64.b64encode(value.read()).decode()}
     raise Exception("Unsupported type for encoding: {}".format(value_type))
@@ -72,6 +81,11 @@ def decode_value(value):
         file.seek(0)
         return pd.read_pickle(file.name, compression=None)
     if value_type == "sklearn_model":
+        file = tempfile.NamedTemporaryFile()
+        file.write(base64.b64decode(value["data"]))
+        file.seek(0)
+        return joblib.load(file.name)
+    if value_type == "matplotlib_axis":
         file = tempfile.NamedTemporaryFile()
         file.write(base64.b64decode(value["data"]))
         file.seek(0)

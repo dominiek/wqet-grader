@@ -16,9 +16,9 @@ class install(_install):
 
 setup(
     name="wqet_grader",
-    version="0.1.28",
+    version="0.2.0",
     description='Grading for WQET',
-    url='https://github.com/dominiek/wqet-grader',
+    url='https://github.com/worldquant/wqet-grader',
     cmdclass={'install': install},
     include_package_data=True,
     install_requires=[
@@ -26,6 +26,7 @@ setup(
         'requests>=2.26.0',
         'category-encoders>=2.2.2',
         'scikit-learn>=1.0',
+        'matplotlib>=3.7'
     ],
     packages=find_packages()
 )
