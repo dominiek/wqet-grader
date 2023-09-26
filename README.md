@@ -34,6 +34,7 @@ wqet_grader.grade_object('Sample Assessment', 'Question 1', arg1=arg1, arg2=arg2
 Supported objects:
 
 - `file` Binary file
+- `matplotlib_axis` Matplotlib Axis
 - `pandas_dataframe` Pandas DataFrame object
 - `sklearn_model` SKLearn pipeline/model
 - `float`, `int`, `string`, `dict`, `list` - Primative types
