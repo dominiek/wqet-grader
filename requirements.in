@@ -8,3 +8,4 @@ flask-cors
 pandas
 scikit-learn
 category_encoders
+matplotlib
