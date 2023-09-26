@@ -27,7 +27,6 @@ FAIL_ON_FIRST = os.getenv("FAIL_ON_FIRST", None)
 def encode_value(value, value_type=None):
     if not value_type:
         value_type = type(value).__name__
-    print(value_type)
     if value_type in ["list", "dict", "int", "float", "float64", "str", "bool"]:
         return {"type": value_type, "data": json.dumps(value)}
     if value_type in ["pandas_dataframe", "DataFrame"]:
